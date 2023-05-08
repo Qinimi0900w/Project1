@@ -1,0 +1,50 @@
+/* asite */
+.form {
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+  }
+  
+  .checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    margin: 5px;
+  }
+  
+  .checkbox+span {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+  }
+  
+  .checkbox+span::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #adb5bd;
+    border-radius: 0.25em;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+  }
+  .form span{
+    margin-top: 10px;
+  }
+  .btn{
+    margin-top: 20px;
+    background-color: #7E5BC2;
+    border-radius: 10px;
+    width: 168px;
+    height: 30px;
+    padding: 6px 10px ;
+    border: none;
+  }
+  .btn a{
+    text-decoration: none;
+    color: #fff;
+  }

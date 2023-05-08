@@ -1,8 +1,9 @@
 import React from "react";
-import Logo from "./img/Group1.png"
-import Search from "./img/search.png"
-import Profile from "./img/Group.png"
-import Menu from "./img/menu.png"
+import "./header.css";
+import Logo from "./../img/logo.png";
+import Search from "./../img/search.png";
+import Profile from "./../img/Group.png";
+import Menu from "./../img/menu.png";
 
 const Header = () => {
     return (

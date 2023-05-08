@@ -1,11 +1,11 @@
 import React from "react";
-import Aside from "./aside";
-import Section from "./section";
-import Jpg1 from "./img/Rectangle 7.png"
-import Jpg2 from "./img/Rectangle 8.png"
-import Jpg3 from "./img/Rectangle 9.png"
-import Jpg4 from "./img/Rectangle 10.png"
-import Jpg5 from "./img/Rectangle 11.png"
+import Aside from "./aside/aside";
+import Section from "./section/section";
+import Jpg1 from "./../img/Rectangle 7.png";
+import Jpg2 from "./../img/Rectangle 8.png";
+import Jpg3 from "./../img/Rectangle 9.png";
+import Jpg4 from "./../img/Rectangle 10.png";
+import Jpg5 from "./../img/Rectangle 11.png";
 
 
 

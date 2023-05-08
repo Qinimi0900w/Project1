@@ -1,9 +1,10 @@
 import React from "react";
-import Like from "./img/heart.png"
-import Share from "./img/share-2.png"
+import "./section.css"
+import Like from "./../../img/heart.png"
+import Share from "./../../img/share-2.png"
 
 
-const Section = (props) => {
+const FavSection = (props) => {
     return (
         <>
             <div className="content_block">
@@ -12,7 +13,7 @@ const Section = (props) => {
                 </div>
                 <div className="subtitle">
                     <div className="like_btn">
-                        <a href="">
+                        <a href="" className="btn_like">
                             <img src={Like} alt="" />
                         </a>
                     </div>
@@ -42,4 +43,4 @@ const Section = (props) => {
     )
 }
 
-export default Section;
+export default FavSection;

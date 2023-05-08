@@ -1,16 +1,14 @@
 import React from 'react';
-import Header from './components/header';
-import Component from './components/component';
-import Footer from './components/footer';
+import Main from './components/main/main';
+import Pages from './components/newspages/mainpages';
+
 
 function App() {
   return (
-    <div>
-      <Header/>
-      <Component/>
-      <Footer/>
-    </div>
-
+    <>
+      {/* <Main/> */}
+      <Pages/>
+      </>        
   );
 }
 

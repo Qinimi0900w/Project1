@@ -1,0 +1,45 @@
+.header_news {
+    background-image: url(./../../img/image3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 280px;
+    position: relative;
+  }
+  
+  .all_logolink {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .logo_pr img {
+    margin-right: 300px;
+  }
+  
+  .link_pr {
+    margin-left: 300px;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+  }
+  
+  .link_pr ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .link_pr img {
+    padding-right: 20px;
+  }
+  
+  .title {
+    color: white;
+    font-family: 'Public Sans', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 72px;
+    display: flex;
+    justify-content: center; 
+  }
