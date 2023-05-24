@@ -1,10 +1,12 @@
 import React from "react";
 import "./section.css"
-import Like from "./../../img/heart.png"
 import Share from "./../../img/share-2.png"
+import { faHeart } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
 const FavSection = (props) => {
+
     return (
         <>
             <div className="content_block">
@@ -13,9 +15,7 @@ const FavSection = (props) => {
                 </div>
                 <div className="subtitle">
                     <div className="like_btn">
-                        <a href="" className="btn_like">
-                            <img src={Like} alt="" />
-                        </a>
+                        <FontAwesomeIcon icon={faHeart} className="iconLike" id="iconLike" /*onClick={likeBtn}*/ />
                     </div>
                     <div className="subtitle">
                         <p className="grey">

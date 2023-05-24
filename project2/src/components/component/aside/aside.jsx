@@ -10,29 +10,29 @@ const Aside = () => {
                         <b>Фильтрация</b>
                     </p>
                 </div>
-                <div className="checkbox">
-                    <input type="custom-checkbox" className="checkbox" disabled="disabled" name="sport"/>
-                    <label for="sport">Спорт</label>
+                <div className="form-group">
+                    <input type="checkbox" className="custom-checkbox"  id="sport"/>
+                    <label htmlFor="sport">Спорт</label>
                 </div>
                 <br />
-                <div className="checkbox">
-                    <input type="custom-checkbox" className="checkbox" disabled="disabled"/>
-                    <label>Политика</label>
+                <div className="form-group">
+                    <input type="checkbox" className="custom-checkbox"  id="politic"/>
+                    <label  htmlFor="politic">Политика</label>
                 </div>
                 <br />
-                <div className="checkbox">
-                    <input type="custom-checkbox" className="checkbox" disabled="disabled" />
-                    <label>Звезды</label>
+                <div className="form-group">
+                    <input type="checkbox" className="custom-checkbox"  id="stars" />
+                    <label  htmlFor="stars">Звезды</label>
                 </div>
                 <br />
-                <div className="checkbox">
-                    <input type="custom-checkbox" className="checkbox" disabled="disabled"/>
-                    <label>Искусство</label>
+                <div className="form-group">
+                    <input type="checkbox" className="custom-checkbox"  id="art"/>
+                    <label  htmlFor="art">Искусство</label>
                 </div>
                 <br />
-                <div className="checkbox">
-                    <input type="custom-checkbox" className="checkbox" />
-                    <label>Мода</label>
+                <div className="form-group">
+                    <input type="checkbox" className="custom-checkbox" id="fashion"/>
+                    <label  htmlFor="fashion">Мода</label>
                 </div>
                 <br />
                 <button className="btn">
