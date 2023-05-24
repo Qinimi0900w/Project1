@@ -4,17 +4,32 @@
     height: 112px;
     text-align: center;
     margin-top: 60px;
-    padding: 40px;
+    padding: 40px 0; 
   }
   .footer a{
     text-decoration: none;
     color: #fff;
     display: flex;
-    
+  }
+  .footer img{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .fft{
     width: 300px;
     display: flex;
-    justify-content: space-between;
-    padding-left: 600px;
+    margin: auto;
+    padding: 0;
+  }
+
+  @media screen and ( max-width: 970px) and (min-width:500px){
+    .footer{
+      width: 100%;
+    }
+    .fft{
+      width: 300px;
+      margin: auto;      
+    }
   }

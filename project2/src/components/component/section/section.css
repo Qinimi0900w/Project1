@@ -13,7 +13,7 @@
   
   .content_block {
     width: 845px;
-    height: 230px;
+    height: 270px;
     display: flex;
     text-align: left;
     /* border: 1px solid black; */
@@ -50,4 +50,45 @@
   
   .share_btn {
     margin-top: 15px;
+  }
+  .hr{
+    color: darkgrey;
+    width: 845px;
+  }
+
+  @media(max-width:900px){
+    .content_block{
+      width: 50%;
+      height: auto;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 50px;
+      margin: auto;
+
+    }
+    .hr {
+      width: 50%;
+    }
+    .img img{
+      width: 400px;
+      height: 343px;
+    }
+  }
+  @media screen and (max-width:500px) and (min-width:360px){
+    .content_block{
+      width: 50%;
+      height: auto;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0 50px auto;
+      margin: auto;
+
+    }
+    .hr {
+      width: 50%;
+    }
+    .img img{
+      width: 300px;
+      height: 243px;
+    }
   }

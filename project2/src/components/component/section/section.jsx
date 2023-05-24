@@ -37,7 +37,7 @@ const FavSection = (props) => {
                     </div>
                 </div>
             </div>
-            <hr style={{ color: "darkgray", width: 845 }} />
+            <hr className="hr" />
         </>
 
     )

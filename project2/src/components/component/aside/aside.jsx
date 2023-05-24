@@ -10,20 +10,30 @@ const Aside = () => {
                         <b>Фильтрация</b>
                     </p>
                 </div>
-                <input type="checkbox" className="checkbox" />
-                <span>Спорт</span>
+                <div className="checkbox">
+                    <input type="custom-checkbox" className="checkbox" disabled="disabled" name="sport"/>
+                    <label for="sport">Спорт</label>
+                </div>
                 <br />
-                <input type="checkbox" className="checkbox" />
-                <span>Политика</span>
+                <div className="checkbox">
+                    <input type="custom-checkbox" className="checkbox" disabled="disabled"/>
+                    <label>Политика</label>
+                </div>
                 <br />
-                <input type="checkbox" className="checkbox" />
-                <span>Звезды</span>
+                <div className="checkbox">
+                    <input type="custom-checkbox" className="checkbox" disabled="disabled" />
+                    <label>Звезды</label>
+                </div>
                 <br />
-                <input type="checkbox" className="checkbox" />
-                <span>Искусство</span>
+                <div className="checkbox">
+                    <input type="custom-checkbox" className="checkbox" disabled="disabled"/>
+                    <label>Искусство</label>
+                </div>
                 <br />
-                <input type="checkbox" className="checkbox" />
-                <span>Мода</span>
+                <div className="checkbox">
+                    <input type="custom-checkbox" className="checkbox" />
+                    <label>Мода</label>
+                </div>
                 <br />
                 <button className="btn">
                     <a href="">Применить</a>

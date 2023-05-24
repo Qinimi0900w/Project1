@@ -6,8 +6,8 @@ import Pages from './components/newspages/mainpages';
 function App() {
   return (
     <>
-      {/* <Main/> */}
-      <Pages/>
+      <Main/>
+      {/* <Pages/> */}
       </>        
   );
 }
