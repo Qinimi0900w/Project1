@@ -3,10 +3,38 @@ import img from "./img/Rectangle 7.png";
 import arrow from "./img/arrow-left.png";
 import like from "./img/heart.png";
 import share from "./img/share-2.png"
+import CommentBlock from "./comment";
 
 
-const Page = ({head,data,txt1,txt2}) => {
-    return (
+// const Page = () => {
+//     const dataPage =[
+//         {
+//             id:1,
+//             head:"Заголовок новости",
+//             txt1:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+//             img:"./img/Rectangle 7.png",
+//             txt2:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.Curabitur tempor quis eros tempus lacinia. Nam bibendum pellentesque quam a convallis. Sed ut vulputate nisi. Integer in felis sed leo vestibulum venenatis. Suspendisse quis arcu sem. Aenean feugiat ex eu vestibulum vestibulum. Morbi a eleifend magna. Nam metus lacus, porttitor eu mauris a, blandit ultrices nibh. Mauris sit amet magna non ligula vestibulum eleifend. Nulla varius volutpat turpis sed lacinia. Nam eget mi in purus lobortis eleifend. Sed nec ante dictum sem condimentum ullamcorper quis venenatis nisi. Proin vitae facilisis nisi, ac posuere leo.Nam pulvinar blandit velit, id condimentum diam faucibus at. Aliquam lacus nisi, sollicitudin at nisi nec, fermentum congue felis. Quisque mauris dolor, fringilla sed tincidunt ac, finibus non odio. Sed vitae mauris nec ante pretium finibus. Donec nisl neque, pharetra ac elit eu, faucibus aliquam ligula. Nullam dictum, tellus tincidunt tempor laoreet, nibh elit sollicitudin felis, eget feugiat sapien diam nec nisl. Aenean gravida turpis nisi, consequat dictum risus dapibus a. Duis felis ante, varius in neque eu, tempor suscipit sem. Maecenas ullamcorper gravida sem sit amet cursus. Etiam pulvinar purus vitae justo pharetra consequat. Mauris id mi ut arcu feugiat maximus. Mauris consequat tellus id tempus aliquet.",
+//         }
+//     ]
+
+//     const items = dataPage.map((item) => {
+//         <PageSection
+//         id={item.id}
+//         head={item.head}
+//         txt1={item.txt1}
+//         txt2={item.txt2}
+//         />
+//     } )
+//     return (
+//         <div className="titlePage">
+//             {items}
+//         </div>
+//     )
+// }
+// export default Page;
+
+const PageSection = ({head,data,img,txt1,txt2}) => {
+    return(
         <>
             <div className="page_main">
                 <div className="div-arrow">
@@ -35,76 +63,9 @@ const Page = ({head,data,txt1,txt2}) => {
                 </button>
                 <br />
                 <br />
-                <div className="comment_content">
-                    <h3>Комментарии</h3>
-                    <div className="comment-txt">
-                        <p>
-                            <b>Олег Петров</b>
-                        </p>
-                        <p className="grey">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
-                            libero et velit interdum, ac aliquet odio mattis. Class aptent taciti
-                            sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-                        </p>
-                        <div className="comment_link">
-                            <p className="grey">30.11.2022</p>
-                            <a href="">Ответить</a>
-                        </div>
-                        <div className="comment_subtxt">
-                            <p>
-                                <b>Олег Петров</b>
-                            </p>
-                            <p className="grey">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                                vulputate libero et velit interdum, ac aliquet odio mattis. Class
-                                aptent taciti sociosqu ad litora torquent per conubia nostra, per
-                                inceptos himenaeos.
-                            </p>
-                            <div className="comment_link">
-                                <p className="grey">30.11.2022</p>
-                                <a href="">Ответить</a>
-                            </div>
-                            <div className="block_answer">
-                                <label htmlFor="">
-                                    <b>Вы</b>
-                                </label>
-                                <input type="text" className="fields_answer" />
-                                <input type="submit" defaultValue="Ответить" className="btn_answer" />
-                            </div>
-                        </div>
-                        <p>
-                            <b>Олег Петров</b>
-                        </p>
-                        <p className="grey">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
-                            libero et velit interdum, ac aliquet odio mattis. Class aptent taciti
-                            sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-                        </p>
-                        <div className="comment_link">
-                            <p className="grey">30.11.2022</p>
-                            <a href="">Ответить</a>
-                        </div>
-                        <div className="mainblock_answer">
-                            <label htmlFor="">
-                                <b>Вы</b>
-                            </label>
-                            <input
-                                type="text"
-                                className="mainFieldSnswer"
-                                placeholder="Напишите комментарий"
-                            />
-                            <input
-                                type="submit"
-                                defaultValue="Ответить"
-                                className="btn_mainfield"
-                            />
-                        </div>
-                    </div>
-                </div>
             </div>
-
-
+            <CommentBlock/>
         </>
     )
 }
-export default Page;
+export default PageSection;

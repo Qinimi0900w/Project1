@@ -14,7 +14,7 @@ const Component = () => {
         return (
             <Fragment key ={item.id} >
                 < Section 
-                    img={item.img}
+                    img={item.img_url}
             />
             </Fragment>
             
@@ -25,8 +25,8 @@ const Component = () => {
             <div className="main">
                 <Aside />
                 <section className="news_list">
-                    {/* {items} */}
-                    <Section 
+                    {items}
+                    {/* <Section 
                      src={Jpg1}
                      />
                     <Section
@@ -37,7 +37,7 @@ const Component = () => {
                     />
                     <Section
                     src={Jpg4}
-                    />
+                    /> */}
                     
                 </section>
             </div>
